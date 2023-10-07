@@ -16,10 +16,10 @@ class CreateDevicecategoryTable extends Migration
         Schema::create('devicecategory', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->longText('description');
-            $table->string('status');
-            $table->tinyInteger('popular');
-            $table->string('image');
+            $table->longText('description')->nullable();
+            $table->string('status')->nullable();
+            $table->tinyInteger('popular')->nullable();
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
