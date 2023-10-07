@@ -22,7 +22,7 @@ class CreateOrdersTable extends Migration
             $table->string('phone');
             $table->string('address');
             $table->string('city');
-            $table->string('color')->nullable();;
+            $table->string('color');
             $table->string('total_price')->nullable();
             $table->string('payment_mode');
             $table->string('payment_id')->nullable();
